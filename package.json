@@ -1,0 +1,25 @@
+{
+  "name": "project-restaurant-page",
+  "version": "1.0.0",
+  "description": "Based on The Odin Project: https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorbenedict/Project-Restaurant-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorbenedict/Project-Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/victorbenedict/Project-Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
