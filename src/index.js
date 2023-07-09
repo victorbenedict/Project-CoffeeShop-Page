@@ -4,46 +4,28 @@ import showMenu from './menu.js';
 import showContact from './contact.js';
 import showFooter from './footer.js';
 
-const divContent = document.querySelector('.content');
-const divMiddleContent = document.querySelector('#middleContent');
-
-
-(function(global){
-  function renderHome(){
-    document.querySelector('#navHome').addEventListener('click', () => {
-    divMiddleContent.innerHTML = "";
-    divMiddleContent.appendChild(showHome());
-    });
-  }
-  
-  function renderMenu(){
-  
-  }
-  
-  function renderContact(){
-    
-  }
-})(window);
-
-
-
-// divContent.appendChild(showHeader());
-// divContent.appendChild(showHome());
-// divContent.appendChild(showFooter());
-
-
-
-
-document.querySelector('#navMenu').addEventListener('click', () => {
+function renderMiddleContent(moduleFunction) {
+  const divMiddleContent = document.querySelector('#middleContent');
   divMiddleContent.innerHTML = "";
-  divMiddleContent.appendChild(showMenu());
+  divMiddleContent.appendChild(moduleFunction);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const divContent = document.querySelector('.content');
+  divContent.appendChild(showHeader());
+  divContent.appendChild(showHome());
+  divContent.appendChild(showFooter());
+
+  document.querySelector('#navHome').addEventListener('click', () => {
+    renderMiddleContent(showHome());
+  });
+
+  document.querySelector('#navMenu').addEventListener('click', () => {
+    renderMiddleContent(showMenu());
+  });
+
+  document.querySelector('#navContact').addEventListener('click', () => {
+    renderMiddleContent(showContact());
+  });
+  window.renderMiddleContent = renderMiddleContent;
 });
-
-document.querySelector('#navContact').addEventListener('click', () => {
-  divMiddleContent.innerHTML = "";
-  divMiddleContent.appendChild(showContact());
-});
-
-const btnMenu = document.querySelector('#btnMenu');
-const btnContact = document.querySelector('#btnContact');
-

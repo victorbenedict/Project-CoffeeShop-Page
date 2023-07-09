@@ -1,4 +1,7 @@
 
+import showMenu from './menu.js';
+import showContact from './contact.js';
+
 export default function showHome() {
   console.log('showHome module');
   let divHome = document.createElement('div')
@@ -12,5 +15,16 @@ export default function showHome() {
       </div>
     </div>
   `
+    // Add event listener to btnMenu
+    const btnMenu = divHome.querySelector('#btnMenu');
+    btnMenu.addEventListener('click', () => {
+      renderMiddleContent(showMenu());
+    });
+  
+    // Add event listener to btnContact
+    const btnContact = divHome.querySelector('#btnContact');
+    btnContact.addEventListener('click', () => {
+      renderMiddleContent(showContact());
+    });
   return divHome;
 }
