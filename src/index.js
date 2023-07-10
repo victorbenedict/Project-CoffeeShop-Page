@@ -3,6 +3,8 @@ import showHome from './home.js';
 import showMenu from './menu.js';
 import showContact from './contact.js';
 import showFooter from './footer.js';
+import './style.css'
+import milkteaIcon from './bubbletea.png';
 
 function renderMiddleContent(moduleFunction) {
   const divMiddleContent = document.querySelector('#middleContent');
@@ -12,7 +14,12 @@ function renderMiddleContent(moduleFunction) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const divContent = document.querySelector('.content');
+
   divContent.appendChild(showHeader());
+  // const mtIcon =  new Image();
+  // mtIcon.src = milkteaIcon;
+  // divContent.appendChild(mtIcon);
+
   divContent.appendChild(showHome());
   divContent.appendChild(showFooter());
 

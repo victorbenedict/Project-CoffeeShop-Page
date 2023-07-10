@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('./AlegreyaSansSC-Black.ttf') format('ttf'),
+      url('./AlegreyaSansSC-Light.ttf') format('ttf'),
+      url('./AlegreyaSansSC-Medium.ttf') format('ttf');
+}
+
+body {
+  color: beige;
+  background-color: burlywood;
+  background: url('./menuBG.jpg');
+  font-family: 'AlegreyaSansSC';
+}
+
+.header {
+  border: 1px solid yellow;
+}
+
+.title {
+  color:whitesmoke;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 1px solid rgb(166, 255, 0);
+
+}
