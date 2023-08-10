@@ -1,28 +1,29 @@
 {
-  "name": "project-restaurant-page",
+  "name": "project-coffeeshop-page",
   "version": "1.0.0",
-  "description": "Based on The Odin Project: https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe",
-  "main": "index.js",
+  "description": "Based on The Odin Project: https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page Live Preview: https://victorbenedict.github.io/Project-CoffeeShop-Page/",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "ghDeploy": "git subtree push --prefix dist origin gh-pages"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/victorbenedict/Project-Restaurant-Page.git"
+    "url": "git+https://github.com/victorbenedict/Project-CoffeeShop-Page.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/victorbenedict/Project-Restaurant-Page/issues"
+    "url": "https://github.com/victorbenedict/Project-CoffeeShop-Page/issues"
   },
-  "homepage": "https://github.com/victorbenedict/Project-Restaurant-Page#readme",
+  "homepage": "https://github.com/victorbenedict/Project-CoffeeShop-Page#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "csv-loader": "^3.0.5",
     "style-loader": "^3.3.3",
-    "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "xml-loader": "^1.2.1"
   }
 }

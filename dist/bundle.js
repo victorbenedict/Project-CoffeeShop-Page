@@ -1,1 +1,280 @@
-(()=>{"use strict";var e={426:(e,n,t)=>{t.d(n,{Z:()=>b});var r=t(81),o=t.n(r),i=t(645),a=t.n(i),c=t(667),d=t.n(c),s=new URL(t(969),t.b),l=new URL(t(72),t.b),u=new URL(t(919),t.b),f=new URL(t(665),t.b),v=a()(o()),p=d()(s),m=d()(l),h=d()(u),g=d()(f);v.push([e.id,`@font-face {\n  font-family: 'AlegreyaSansSC';\n  src: url(${p}) format('ttf'),\n      url(${m}) format('ttf'),\n      url(${h}) format('ttf');\n}\n\nbody {\n  color: beige;\n  background-color: burlywood;\n  background: url(${g});\n  font-family: 'AlegreyaSansSC';\n}\n\n.header {\n  border: 1px solid yellow;\n}\n\n.title {\n  color:whitesmoke;\n  font-size: 1.8rem;\n  font-weight: bold;\n  border: 1px solid rgb(166, 255, 0);\n\n}`,""]);const b=v},645:e=>{e.exports=function(e){var n=[];return n.toString=function(){return this.map((function(n){var t="",r=void 0!==n[5];return n[4]&&(t+="@supports (".concat(n[4],") {")),n[2]&&(t+="@media ".concat(n[2]," {")),r&&(t+="@layer".concat(n[5].length>0?" ".concat(n[5]):""," {")),t+=e(n),r&&(t+="}"),n[2]&&(t+="}"),n[4]&&(t+="}"),t})).join("")},n.i=function(e,t,r,o,i){"string"==typeof e&&(e=[[null,e,void 0]]);var a={};if(r)for(var c=0;c<this.length;c++){var d=this[c][0];null!=d&&(a[d]=!0)}for(var s=0;s<e.length;s++){var l=[].concat(e[s]);r&&a[l[0]]||(void 0!==i&&(void 0===l[5]||(l[1]="@layer".concat(l[5].length>0?" ".concat(l[5]):""," {").concat(l[1],"}")),l[5]=i),t&&(l[2]?(l[1]="@media ".concat(l[2]," {").concat(l[1],"}"),l[2]=t):l[2]=t),o&&(l[4]?(l[1]="@supports (".concat(l[4],") {").concat(l[1],"}"),l[4]=o):l[4]="".concat(o)),n.push(l))}},n}},667:e=>{e.exports=function(e,n){return n||(n={}),e?(e=String(e.__esModule?e.default:e),/^['"].*['"]$/.test(e)&&(e=e.slice(1,-1)),n.hash&&(e+=n.hash),/["'() \t\n]|(%20)/.test(e)||n.needQuotes?'"'.concat(e.replace(/"/g,'\\"').replace(/\n/g,"\\n"),'"'):e):e}},81:e=>{e.exports=function(e){return e[1]}},379:e=>{var n=[];function t(e){for(var t=-1,r=0;r<n.length;r++)if(n[r].identifier===e){t=r;break}return t}function r(e,r){for(var i={},a=[],c=0;c<e.length;c++){var d=e[c],s=r.base?d[0]+r.base:d[0],l=i[s]||0,u="".concat(s," ").concat(l);i[s]=l+1;var f=t(u),v={css:d[1],media:d[2],sourceMap:d[3],supports:d[4],layer:d[5]};if(-1!==f)n[f].references++,n[f].updater(v);else{var p=o(v,r);r.byIndex=c,n.splice(c,0,{identifier:u,updater:p,references:1})}a.push(u)}return a}function o(e,n){var t=n.domAPI(n);return t.update(e),function(n){if(n){if(n.css===e.css&&n.media===e.media&&n.sourceMap===e.sourceMap&&n.supports===e.supports&&n.layer===e.layer)return;t.update(e=n)}else t.remove()}}e.exports=function(e,o){var i=r(e=e||[],o=o||{});return function(e){e=e||[];for(var a=0;a<i.length;a++){var c=t(i[a]);n[c].references--}for(var d=r(e,o),s=0;s<i.length;s++){var l=t(i[s]);0===n[l].references&&(n[l].updater(),n.splice(l,1))}i=d}}},569:e=>{var n={};e.exports=function(e,t){var r=function(e){if(void 0===n[e]){var t=document.querySelector(e);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(e){t=null}n[e]=t}return n[e]}(e);if(!r)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");r.appendChild(t)}},216:e=>{e.exports=function(e){var n=document.createElement("style");return e.setAttributes(n,e.attributes),e.insert(n,e.options),n}},565:(e,n,t)=>{e.exports=function(e){var n=t.nc;n&&e.setAttribute("nonce",n)}},795:e=>{e.exports=function(e){if("undefined"==typeof document)return{update:function(){},remove:function(){}};var n=e.insertStyleElement(e);return{update:function(t){!function(e,n,t){var r="";t.supports&&(r+="@supports (".concat(t.supports,") {")),t.media&&(r+="@media ".concat(t.media," {"));var o=void 0!==t.layer;o&&(r+="@layer".concat(t.layer.length>0?" ".concat(t.layer):""," {")),r+=t.css,o&&(r+="}"),t.media&&(r+="}"),t.supports&&(r+="}");var i=t.sourceMap;i&&"undefined"!=typeof btoa&&(r+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(i))))," */")),n.styleTagTransform(r,e,n.options)}(n,e,t)},remove:function(){!function(e){if(null===e.parentNode)return!1;e.parentNode.removeChild(e)}(n)}}}},589:e=>{e.exports=function(e,n){if(n.styleSheet)n.styleSheet.cssText=e;else{for(;n.firstChild;)n.removeChild(n.firstChild);n.appendChild(document.createTextNode(e))}}},969:(e,n,t)=>{e.exports=t.p+"9a12c57dcb1b3f25ec92.ttf"},72:(e,n,t)=>{e.exports=t.p+"94ffe8f4feeae6d59950.ttf"},919:(e,n,t)=>{e.exports=t.p+"22571419389ad77fd0b0.ttf"},665:(e,n,t)=>{e.exports=t.p+"cf0bc5fb379ff9668212.jpg"}},n={};function t(r){var o=n[r];if(void 0!==o)return o.exports;var i=n[r]={id:r,exports:{}};return e[r](i,i.exports,t),i.exports}t.m=e,t.n=e=>{var n=e&&e.__esModule?()=>e.default:()=>e;return t.d(n,{a:n}),n},t.d=(e,n)=>{for(var r in n)t.o(n,r)&&!t.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:n[r]})},t.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),t.o=(e,n)=>Object.prototype.hasOwnProperty.call(e,n),(()=>{var e;t.g.importScripts&&(e=t.g.location+"");var n=t.g.document;if(!e&&n&&(n.currentScript&&(e=n.currentScript.src),!e)){var r=n.getElementsByTagName("script");if(r.length)for(var o=r.length-1;o>-1&&!e;)e=r[o--].src}if(!e)throw new Error("Automatic publicPath is not supported in this browser");e=e.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),t.p=e})(),t.b=document.baseURI||self.location.href,t.nc=void 0,(()=>{const e=t.p+"7ef14a5d04c52e816132.png";function n(){console.log("showMenu module");let e=document.createElement("div");return e.innerHTML='\n    <div id="middleContent">MIDDLE container\n      <div>Menu</div>\n      <div>Cold Brew</div>\n      <div>Milk Tea</div>\n    </div>\n  ',e}function r(){console.log("showContact module");let e=document.createElement("div");return e.innerHTML='\n    <div id="middleContent">MIDDLE container\n      <div>Contact us</div>\n      <div>We\'d love to hear from you! At SisBrew, your satisfaction is our top priority. If you have any questions, suggestions, or feedback, please reach out to us through the following channels:</div>\n      <div>Email: sisbrewcoffeeandtea@gmail.com</div>\n      <div>Phone: 083 552 5503</div>\n      <div>Address: Bulaong Terminal, General Santos City, Philippines,</div>\n      <div> \n        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.133250709257!2d125.16011341476842!3d6.112756795573847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f79f789cc98701%3A0x20f47e1eaba3a4c3!2sSisBrew%20Coffee%20and%20Tea!5e0!3m2!1sen!2sph!4v1688807253107!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>\n      </div>\n    </div>\n  ',e}function o(){console.log("showHome module");let e=document.createElement("div");return e.innerHTML="\n    <div id=\"middleContent\">MIDDLE container\n      <div>Welcome to SisBrew Coffee & Tea</div>\n      <div>Step into our cozy café and let the aroma of brewed coffee and tea embrace you. Our friendly sisters is here to serve you exceptional coffee and tea, crafted with care and passion. Take a moment to unwind, savor the flavors, and create cherished memories in our welcoming space.</div>\n      <div>\n        <button id='btnMenu'>Our Menu</button>\n        <button id='btnContact'>Contact Us</button>\n      </div>\n    </div>\n  ",e.querySelector("#btnMenu").addEventListener("click",(()=>{renderMiddleContent(n())})),e.querySelector("#btnContact").addEventListener("click",(()=>{renderMiddleContent(r())})),e}var i=t(379),a=t.n(i),c=t(795),d=t.n(c),s=t(569),l=t.n(s),u=t(565),f=t.n(u),v=t(216),p=t.n(v),m=t(589),h=t.n(m),g=t(426),b={};function y(e){const n=document.querySelector("#middleContent");n.innerHTML="",n.appendChild(e)}b.styleTagTransform=h(),b.setAttributes=f(),b.insert=l().bind(null,"head"),b.domAPI=d(),b.insertStyleElement=p(),a()(g.Z,b),g.Z&&g.Z.locals&&g.Z.locals,document.addEventListener("DOMContentLoaded",(()=>{const t=document.querySelector(".content");t.appendChild(function(){console.log("showHeader module");let n=document.createElement("div");n.innerHTML="\n    <div class='header'>Header container\n      <div class='title'>SISBREW Coffee & Tea</div>\n      <div class='logo'>center logo placeholder</div>\n      <div class='navigation'>\n        <div id='navHome'>Home</div>\n        <div id='navMenu'>Menu</div>\n        <div id='navContact'>Contact</div>\n      </div>\n    </div>\n  ";const t=new Image;return t.src=e,n.appendChild(t),n}()),t.appendChild(o()),t.appendChild(function(){console.log("showFooter module");let e=document.createElement("div");return e.innerHTML="\n    <div>BOTTOM container\n      <div>Credits</div>\n      <div>Source Code</div>\n    </div>\n  ",e}()),document.querySelector("#navHome").addEventListener("click",(()=>{y(o())})),document.querySelector("#navMenu").addEventListener("click",(()=>{y(n())})),document.querySelector("#navContact").addEventListener("click",(()=>{y(r())})),window.renderMiddleContent=y}))})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
+/*!*************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body {\n  margin: 0;\n  line-height: 1.6;\n  font-weight: 400;\n  font-family: \"Raleway\", \"HelveticaNeue\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  color: #222; \n  height: 100vh;\n  border: 1px solid tomato;\n  display: flex;\n  flex-direction: column;\n}\n\nheader {\n  border: 1px solid yellow;\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n}\n\nheader > *:first-child {\n  /* min-width: 230px; */\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-grow: 1;\n}\n\nheader > *:last-child {\n  padding: 1rem;\n  flex-grow: 1;\n}\n\n@media (max-width: 650px) {\n  header {\n    flex-direction: column;\n  }\n  \n  header > * {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n  \n}\n\nh1 { \n  font-size: 1.5rem;\n  font-weight: 300; \n}\n\n\n.header_div img {\n  height: 80px;\n}\n\n.title {\n  color:whitesmoke;\n  font-size: 1.8rem;\n  font-weight: bold;\n}\n\nnav {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\nnav ul {\n  list-style: none; \n  padding: 0;\n  margin: 0;\n}\n\nnav ul li {\n  display: inline;\n  margin: 0.5rem;\n}\n\nmain {\n flex-grow: 1;\n}\n\na {\n  color: #222;\n  text-decoration: none;\n}\n\na:hover {\n  color: #3d3d3d; \n  outline: 0;\n  text-decoration: underline;\n}\n\nfooter {\n  padding: 0.8rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  border: 1px solid teal;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://project-coffeeshop-page/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/data.csv":
+/*!**********************!*\
+  !*** ./src/data.csv ***!
+  \**********************/
+/***/ ((module) => {
+
+eval("module.exports = [[\"Cold Brew\",\"\",\"\",\"\"],[\"Americano\",\"39\",\"\",\"\"],[\"Caffe Latte\",\"39\",\"\",\"\"],[\"Spanish Latte\",\"39\",\"\",\"\"],[\"\",\"\",\"\",\"\"],[\"Dark Mocha Latte\",\"59\",\"\",\"\"],[\"Hazelnut Latte\",\"59\",\"\",\"\"],[\"Vanilla Latte\",\"59\",\"\",\"\"],[\"\",\"\",\"\",\"\"],[\"Iced Coffee\",\"Mini\",\"Medio\",\"Grande\"],[\"Caramel Macchiato\",\"29\",\"39\",\"69\"],[\"Macchiato\",\"29\",\"39\",\"69\"],[\"Cappuccino\",\"29\",\"39\",\"69\"],[\"White Blanco\",\"29\",\"39\",\"69\"],[\"\",\"\",\"\",\"\"],[\"Milktea\",\"\",\"\",\"\"],[\"Dark Chocolate\",\"25\",\"39\",\"49\"],[\"Black Forest\",\"25\",\"39\",\"49\"],[\"Red Velvet\",\"25\",\"39\",\"49\"],[\"Cookie and Cream\",\"25\",\"39\",\"49\"],[\"Mango Cheesecake\",\"25\",\"39\",\"49\"],[\"Strawberry\",\"25\",\"39\",\"49\"],[\"White Bunny\",\"25\",\"39\",\"49\"],[\"Hazelnut\",\"25\",\"39\",\"49\"],[\"Okinawa\",\"25\",\"39\",\"49\"],[\"Wintermelon\",\"25\",\"39\",\"49\"]]\n\n//# sourceURL=webpack://project-coffeeshop-page/./src/data.csv?");
+
+/***/ }),
+
+/***/ "./src/style.css":
+/*!***********************!*\
+  !*** ./src/style.css ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://project-coffeeshop-page/./src/style.css?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\nvar stylesInDOM = [];\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n  for (var i = 0; i < stylesInDOM.length; i++) {\n    if (stylesInDOM[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n  return result;\n}\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var indexByIdentifier = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3],\n      supports: item[4],\n      layer: item[5]\n    };\n    if (indexByIdentifier !== -1) {\n      stylesInDOM[indexByIdentifier].references++;\n      stylesInDOM[indexByIdentifier].updater(obj);\n    } else {\n      var updater = addElementStyle(obj, options);\n      options.byIndex = i;\n      stylesInDOM.splice(i, 0, {\n        identifier: identifier,\n        updater: updater,\n        references: 1\n      });\n    }\n    identifiers.push(identifier);\n  }\n  return identifiers;\n}\nfunction addElementStyle(obj, options) {\n  var api = options.domAPI(options);\n  api.update(obj);\n  var updater = function updater(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {\n        return;\n      }\n      api.update(obj = newObj);\n    } else {\n      api.remove();\n    }\n  };\n  return updater;\n}\nmodule.exports = function (list, options) {\n  options = options || {};\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDOM[index].references--;\n    }\n    var newLastIdentifiers = modulesToDom(newList, options);\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n      var _index = getIndexByIdentifier(_identifier);\n      if (stylesInDOM[_index].references === 0) {\n        stylesInDOM[_index].updater();\n        stylesInDOM.splice(_index, 1);\n      }\n    }\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/insertBySelector.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
+  \********************************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\nvar memo = {};\n\n/* istanbul ignore next  */\nfunction getTarget(target) {\n  if (typeof memo[target] === \"undefined\") {\n    var styleTarget = document.querySelector(target);\n\n    // Special case to return head of iframe instead of iframe itself\n    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n      try {\n        // This will throw an exception if access to iframe is blocked\n        // due to cross-origin restrictions\n        styleTarget = styleTarget.contentDocument.head;\n      } catch (e) {\n        // istanbul ignore next\n        styleTarget = null;\n      }\n    }\n    memo[target] = styleTarget;\n  }\n  return memo[target];\n}\n\n/* istanbul ignore next  */\nfunction insertBySelector(insert, style) {\n  var target = getTarget(insert);\n  if (!target) {\n    throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n  }\n  target.appendChild(style);\n}\nmodule.exports = insertBySelector;\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/style-loader/dist/runtime/insertBySelector.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/insertStyleElement.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
+  \**********************************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\n/* istanbul ignore next  */\nfunction insertStyleElement(options) {\n  var element = document.createElement(\"style\");\n  options.setAttributes(element, options.attributes);\n  options.insert(element, options.options);\n  return element;\n}\nmodule.exports = insertStyleElement;\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/style-loader/dist/runtime/insertStyleElement.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
+  \**********************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\n/* istanbul ignore next  */\nfunction setAttributesWithoutAttributes(styleElement) {\n  var nonce =  true ? __webpack_require__.nc : 0;\n  if (nonce) {\n    styleElement.setAttribute(\"nonce\", nonce);\n  }\n}\nmodule.exports = setAttributesWithoutAttributes;\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/styleDomAPI.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
+  \***************************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj) {\n  var css = \"\";\n  if (obj.supports) {\n    css += \"@supports (\".concat(obj.supports, \") {\");\n  }\n  if (obj.media) {\n    css += \"@media \".concat(obj.media, \" {\");\n  }\n  var needLayer = typeof obj.layer !== \"undefined\";\n  if (needLayer) {\n    css += \"@layer\".concat(obj.layer.length > 0 ? \" \".concat(obj.layer) : \"\", \" {\");\n  }\n  css += obj.css;\n  if (needLayer) {\n    css += \"}\";\n  }\n  if (obj.media) {\n    css += \"}\";\n  }\n  if (obj.supports) {\n    css += \"}\";\n  }\n  var sourceMap = obj.sourceMap;\n  if (sourceMap && typeof btoa !== \"undefined\") {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  }\n\n  // For old IE\n  /* istanbul ignore if  */\n  options.styleTagTransform(css, styleElement, options.options);\n}\nfunction removeStyleElement(styleElement) {\n  // istanbul ignore if\n  if (styleElement.parentNode === null) {\n    return false;\n  }\n  styleElement.parentNode.removeChild(styleElement);\n}\n\n/* istanbul ignore next  */\nfunction domAPI(options) {\n  if (typeof document === \"undefined\") {\n    return {\n      update: function update() {},\n      remove: function remove() {}\n    };\n  }\n  var styleElement = options.insertStyleElement(options);\n  return {\n    update: function update(obj) {\n      apply(styleElement, options, obj);\n    },\n    remove: function remove() {\n      removeStyleElement(styleElement);\n    }\n  };\n}\nmodule.exports = domAPI;\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/style-loader/dist/runtime/styleDomAPI.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/styleTagTransform.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://project-coffeeshop-page/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./icon.png */ \"./src/icon.png\");\n/* harmony import */ var _bubbletea_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./bubbletea.png */ \"./src/bubbletea.png\");\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data.csv */ \"./src/data.csv\");\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nconst cl = console.log;\n\ncl('hello')\ncl((_data_csv__WEBPACK_IMPORTED_MODULE_3___default()))\n\n// Function to set the favicon\nfunction setFavicon() {\n  const faviconLink = document.querySelector('link[rel=\"icon\"]');\n  const newFavicon = document.createElement('link');\n  newFavicon.rel = 'icon';\n  newFavicon.type = 'image/png';\n  newFavicon.href = _icon_png__WEBPACK_IMPORTED_MODULE_1__;\n\n  if (faviconLink) {\n    // Replace the existing favicon\n    faviconLink.parentNode.replaceChild(newFavicon, faviconLink);\n  } else {\n    // Add the new favicon to the head\n    document.head.appendChild(newFavicon);\n  }\n}\n\nfunction setHeaderImage() {\n  const header_div = document.querySelector('.header_div');\n  const newImage = document.createElement('img');\n  newImage.src = _bubbletea_png__WEBPACK_IMPORTED_MODULE_2__;\n  newImage.alt = 'Bubble Tea Image';\n  header_div.appendChild(newImage);\n  \n}\n// Call the function to set the favicon when the DOM is loaded\ndocument.addEventListener('DOMContentLoaded', () => {\n  setFavicon();\n  setHeaderImage();\n\n});\n(function() {\n  const content = document.querySelector('.content');\n  const navHome = document.getElementById('navHome');\n  const navMenu = document.getElementById('navMenu');\n  const navContact = document.getElementById('navContact');\n\n\n  function renderHome() {\n    content.innerHTML = \"\";\n\n    const heading = document.createElement('h2');\n    const pitch = document.createElement('p');\n    const menuButton = document.createElement('button');\n    const contactButton = document.createElement('button');\n    const div1 = document.createElement('div');\n    const div2 = document.createElement('div');\n    const div3 = document.createElement('div');\n    \n    heading.textContent = 'Welcome to SisBrew Coffee & Tea!'\n    pitch.textContent = 'Step into our cozy café and let the aroma of brewed coffee and tea embrace you. Our friendly sisters is here to serve you exceptional coffee and tea, crafted with care and passion. Take a moment to unwind, savor the flavors, and create cherished memories in our welcoming space.'\n    menuButton.textContent = 'Our Menu';\n    contactButton.textContent = 'Contact Us';\n\n    div1.appendChild(heading);\n    div2.appendChild(pitch);\n    div3.appendChild(menuButton);\n    div3.appendChild(contactButton);\n\n    content.appendChild(div1);\n    content.appendChild(div2);\n    content.appendChild(div3);\n  }\n\n  function renderMenu(){\n    content.innerHTML = \"\";\n    const heading = document.createElement('h2');\n    const table = document.createElement('table');\n    const div1 = document.createElement('div');\n    const div2 = document.createElement('div');\n    \n    heading.textContent = 'Our Menu';\n\n    _data_csv__WEBPACK_IMPORTED_MODULE_3___default().forEach(rowData => {\n      const rowElement = document.createElement('tr');\n\n      rowData.forEach(cellData => {\n        const cellElement = document.createElement('td');\n        cellElement.textContent = cellData;\n        rowElement.appendChild(cellElement);\n      });\n      table.appendChild(rowElement);\n      });\n\n      div1.appendChild(heading);\n      div2.appendChild(table);\n      content.appendChild(div1);\n      content.appendChild(div2);\n  }\n  \n  function renderContact(){\n    content.innerHTML = \"\";\n    const heading = document.createElement('h2');\n    const statement = document.createElement('p');\n    const emailDiv = document.createElement('div');\n    const emailLabel = document.createElement('strong');\n    const email = document.createElement('a');\n    const phoneDiv = document.createElement('div');\n    const phoneLabel = document.createElement('strong');\n    const phone = document.createElement('a');\n    const addressDiv = document.createElement('div');\n    const addressLabel = document.createElement('strong');\n    const address = document.createElement('address')\n    const map = document.createElement('iframe');\n    const div1 = document.createElement('div');\n    const div2 = document.createElement('div');\n    const div3 = document.createElement('div');\n    const div4 = document.createElement('div');\n\n    heading.textContent = 'Contact us';\n    statement.textContent = \"We'd love to hear from you! At Sisbrew, your satisfaction is our top priority. If you have any questions, suggestions, or feedback, please reach out to us through the following channels:\"\n    emailLabel.textContent = 'Email: ';\n    email.href = 'mailto:sisbrewcoffeeandtea@gmail.com';\n    email.textContent = 'sisbrewcoffeeandtea@gmail.com';\n    phoneLabel.textContent = 'Phone: ';\n    phone.href = 'tel:+083 552 5503';\n    phone.textContent = '+083 552 5503';\n    addressLabel.textContent = 'Address: ';\n    address.textContent = 'Bulaong Terminal, General Santos City, Philippines';\n    map.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.133250709257!2d125.16011341476842!3d6.112756795573847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f79f789cc98701%3A0x20f47e1eaba3a4c3!2sSisBrew%20Coffee%20and%20Tea!5e0!3m2!1sen!2sph!4v1688807253107!5m2!1sen!2sph';\n    map.width = 400;\n    map.height = 300;\n    map.style = 'border:0';\n    map.allowFullscreen = '';\n    map.loading = 'lazy';\n    map.referrerPolicy = 'no-referrer-when-downgrade';\n\n    div1.appendChild(heading);\n    div2.appendChild(statement);\n    div3.appendChild(emailDiv);\n    div3.appendChild(phoneDiv);\n    div3.appendChild(addressDiv);\n    div4.appendChild(map);\n    emailDiv.appendChild(emailLabel);\n    emailDiv.appendChild(email);\n    phoneDiv.appendChild(phoneLabel);\n    phoneDiv.appendChild(phone);\n    addressDiv.appendChild(addressLabel);\n    addressDiv.appendChild(address);\n    content.appendChild(div1);\n    content.appendChild(div2);\n    content.appendChild(div3);\n    content.appendChild(div4);\n  }\n  \n  navHome.addEventListener('click', () => {\n    renderHome();\n  });\n  \n  navMenu.addEventListener('click', () => {\n    renderMenu()\n  });\n  \n  navContact.addEventListener('click', () => {\n    renderContact()\n  });\n  \n  renderHome(); // Call the function immediately\n})();\n\n\n\n\n\n\n\n//# sourceURL=webpack://project-coffeeshop-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/bubbletea.png":
+/*!***************************!*\
+  !*** ./src/bubbletea.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"7ef14a5d04c52e816132.png\";\n\n//# sourceURL=webpack://project-coffeeshop-page/./src/bubbletea.png?");
+
+/***/ }),
+
+/***/ "./src/icon.png":
+/*!**********************!*\
+  !*** ./src/icon.png ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"233df66f46aa7197c2eb.png\";\n\n//# sourceURL=webpack://project-coffeeshop-page/./src/icon.png?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
