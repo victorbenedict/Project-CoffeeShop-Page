@@ -1,0 +1,13 @@
+{
+  "home": {
+    "header": "Welcome to SisBrew",
+    "description": "Step into our cozy café and let the aroma of freshly brewed coffee embrace you. Our friendly team is here to serve you exceptional coffee, crafted with care and passion. Take a moment to unwind, savor the flavors, and create cherished memories in our welcoming space."
+  },
+  "contact": {
+    "header": "Contact Us",
+    "description": "We'd love to hear from you! At Coffee Hut, your satisfaction is our top priority. If you have any questions, suggestions, or feedback, please reach out to us through the following channels:",
+    "email": "feedback@coffeehut.com",
+    "phone": "0123456789",
+    "address": "123, Random Street, Randomville, Randomland"
+  }
+}
