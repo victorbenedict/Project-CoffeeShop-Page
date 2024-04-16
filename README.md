@@ -5,7 +5,8 @@ A simple website for SisBrew Coffee and Tea.
 
 ## The Odin Project
 
-This project is part of The Odin Project's Javascript course: [Project Restaurant Page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page). [The Odin Project](https://www.theodinproject.com/) is a free and open-source curriculum for learning web development. 
+* This project is part of The Odin Project's Javascript course: [Project Restaurant Page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page). 
+* [The Odin Project](https://www.theodinproject.com/) is a free and open-source curriculum for learning web development. 
 
 ### Dependencies
 
