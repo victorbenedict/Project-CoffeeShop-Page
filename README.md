@@ -1,6 +1,6 @@
 # SisBrew Coffee and Tea Website
 
-A simple website for SisBrew Coffee and Tea.
+A simple website for SisBrew Coffee and Tea.  
 [Live Preview](https://victorbenedict.github.io/top-coffee-shop-page/)
 
 ## The Odin Project
@@ -10,7 +10,11 @@ A simple website for SisBrew Coffee and Tea.
 
 ### Dependencies
 
-* npm, html-loader, html-webpack-plugin, webpack, webpack-cli
+* npm
+* html-loader
+* html-webpack-plugin
+* webpack
+* webpack-cli
 
 ### Usage
 
